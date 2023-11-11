@@ -1,3 +1,7 @@
+.bg{
+    background-image: url('qmm.jpg');
+    background-size: cover;
+}
 .Cards {
     display: flex;
     justify-content: space-between;
@@ -6,7 +10,7 @@
     margin: 0px 40px 0px 40px;
 }
 
-.card {
+.card1{
     position: relative;
     display: flex;
     align-items: center;
@@ -17,6 +21,39 @@
     overflow: hidden;
     border-radius: 10px;
     transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
+    background-image: url('journalism.png');
+    background-size: cover;
+    background-color: #ffffff;
+  }
+  .card2 {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 320px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    padding: 32px;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
+    background-image: url('poetry.png');
+    background-size: cover;
+    background-color: #ffffff;
+  }
+  .card3 {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 320px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    padding: 32px;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
+    background-image: url('planet-earth.png');
+    background-size: cover;
+    background-color: #ffffff;
   }
   
   .content {
@@ -24,7 +61,7 @@
     flex-direction: column;
     align-items: flex-start;
     gap: 20px;
-    color: #e8e8e8;
+    color: black;
     transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
   }
   
@@ -38,46 +75,49 @@
   }
   
   .content .btn {
-    color: #e8e8e8;
+    color: #000000;
     text-decoration: none;
     padding: 10px;
     font-weight: 600;
     border: none;
     cursor: pointer;
-    background: linear-gradient(-45deg, #f89b29 0%, #ff0f7b 100% );
+    background: linear-gradient(-45deg, #F6F1ED 0%,#D1B351 100%);
     border-radius: 5px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
   }
   
-  .card::before {
+  .card1::before, .card2::before, .card2::before {
     content: "";
     position: absolute;
     left: 0;
     bottom: 0;
     width: 100%;
     height: 5px;
-    background: linear-gradient(-45deg, #f89b29 0%, #ff0f7b 100% );
+    background: linear-gradient(-45deg, #0b0b0b 0%, #ffffff 100% );
     z-index: -1;
     transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
   }
   
-  .card:hover::before {
+  .card1:hover::before,.card2:hover::before,.card3:hover::before {
     height: 100%;
   }
   
-  .card:hover {
+  .card1:hover,.card2:hover, .card3:hover {
+    background-image: none;
+    background-image: linear-gradient(-45deg, #F6F1ED 0%,#D1B351 100%);
     box-shadow: none;
-  }
-  
-  .card:hover .btn {
     color: #212121;
-    background: #e8e8e8;
+  }
+
+  .card1:hover .btn,.card2:hover .btn,.card3:hover .btn {
+    color: #212121;
+    background: #ffffff;
   }
   
   .content .btn:hover {
-    outline: 2px solid #e8e8e8;
+    outline: 2px solid #000000;
     background: transparent;
-    color: #e8e8e8;
+    color: #000000;
   }
   
   .content .btn:active {

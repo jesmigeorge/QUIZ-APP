@@ -3,8 +3,9 @@ import './home.css'
 
 export default function Home() {
     return (
+        <div className="bg">
         <div className="Cards">
-            <div className="card">
+            <div className="card1">
                 <div className="content">
                     <p className="heading">General Knowledge</p>
                     <p className="para">
@@ -13,16 +14,17 @@ export default function Home() {
                     <Link to = "/gk"><button className="btn">Take the Quiz  </button></Link>
                 </div>
             </div>
-            <div className="card">
+            <div className="card2">
                 <div className="content">
                     <p className="heading">Books</p>
+                    
                     <p className="para">
                     From Timeless Classics to Contemporary Gems, Our Book Quiz Showdown Is the Ultimate Literary Challenge.
                     </p>
                     <button className="btn">Take the Quiz</button>
                 </div>
             </div>
-            <div className="card">
+            <div className="card3">
                 <div className="content">
                     <p className="heading">Geography</p>
                     <p className="para">
@@ -31,6 +33,7 @@ export default function Home() {
                     <button className="btn">Take the Quiz</button>
                 </div>
             </div>
+        </div>
         </div>
     )
 }
